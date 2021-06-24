@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        nuxtjs
+        Ketahui Parkir Landing Page
       </h1>
       <h2 class="subtitle">
-        My astonishing Nuxt.js project
+        My astonishing Ketahui Parkir project
       </h2>
       <div class="links">
         <a
