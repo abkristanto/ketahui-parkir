@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <section id="title">
     <div class="container-fluid">
       <!-- Navbar -->
