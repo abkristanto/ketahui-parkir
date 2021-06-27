@@ -1,74 +1,292 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        Ketahui Parkir Landing Page
-      </h1>
-      <h2 class="subtitle">
-        My astonishing Ketahui Parkir project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <section id="title">
+    <div class="container-fluid">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">ketahuiparkir</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Explore and reach out to new ventures.</h1>
+          <a href="https://www.instagram.com/photato.e/"><button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-instagram"></i> Instagram</button></a>
+          <button type="button" class="btn btn-outline-light btn-lg download-button" onClick="document.getElementById('portfolio').scrollIntoView();">Photo Gallery</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/camera.jpg" alt="camera-photo">
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+        <i class="fas fa-stopwatch fa-5x feature-icon"></i>
+        <h3>Flexible workflow</h3>
+        <p>Capture every special moment with the best clarity.</p>
+      </div>
+      <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+        <i class="fas fa-camera-retro fa-5x feature-icon"></i>
+        <h3>Elite Photography Skills</h3>
+        <p>Creative perspective with award-winning photographers.</p>
+      </div>
+      <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+        <i class="far fa-check-circle fa-5x feature-icon"></i>
+        <h3>Guaranteed results</h3>
+        <p>Prints, edited and unedited files are all included in the bundle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <h2>I no longer need to worry about missing out on unforgettable moments. I now know who to call when I know I want
+      amazing photos. Definitely a must!</h2>
+    <img class="testimonial-image" src="images/woman.jpg" alt="bali-scenery" width="100%" height="auto">
+    <em>Natasha, Long Island</em>
+  </section>
+
+  <!-- Portfolio -->
+
+  <section id="portfolio">
+    <h2 class="portfolio-title">Portfolio Gallery</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/bali.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/train.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/sports.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <h1>A plan for every moment</h1>
+    <p class="price-description">Simple and affordable pricing bundles for you and your needs.</p>
+    <div class="row pricing-plan">
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <h3>Trial</h3>
+        <h2>Free</h2>
+        <p class="price-description">5 photos, maximum 20 minute photoshoot</p>
+        <p class="price-description">Free edited Prints</p>
+        <button type="button" class="btn btn-outline-light btn-lg pricing-button">Sign up</button>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <h3>Full day</h3>
+        <h2>Rp1.000.000,00</h2>
+        <p class="price-description">Unlimited amount of photos</p>
+        <p class="price-description">Full supply of prints in curated color palette, full access to digital files, RAW and JPEG.</p>
+        <button type="button" class="btn btn-outline-light btn-lg pricing-button">Sign up</button>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <h3>Per hour</h3>
+        <h2>Rp200.000,00</h2>
+        <p class="price-description">Maximum 50 pictures per hour</p>
+        <p class="price-description">Full supply of prints in curated color paltette. full access to digital files.</p>
+        <button type="button" class="btn btn-outline-light btn-lg pricing-button">Sign up</button>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="cta">
+    <h3>Discover the moments you want with your loved ones today.</h3>
+    <a href="mailto:abkristanto@gmail.com"><button type="button" class="btn btn-dark btn-lg contact-button">Contact Us</button></a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>©Copyright 2021 KetahuiParkir</p>
+  </footer>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import HomeCard from '~/components/HomeCard.vue'
+
 
 export default {
   components: {
-    Logo
+    Logo,
+    HomeCard,
   }
 }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.body {
+  scroll-behavior: smooth;
+}
+#title {
+    background-color: #cc7351;
+    color: white;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+#features {
+    padding: 5% 15%;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.feature-box {
+    text-align: center;
+    padding: 5%;
 }
 
-.links {
-  padding-top: 15px;
+.feature-icon {
+    margin-bottom: 1rem;
+    color:#e08f62;
+}
+
+.feature-icon:hover {
+    color: #cc7351;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 3.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-size:1.25rem;
+}
+
+/* Download Buttons */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+
+.title-image {
+    width: 100%;
+}
+
+#testimonials {
+    padding: 5% 15%;
+    text-align: center;
+    background-color: #9dab86;
+    color: #fff;
+}
+
+.testimonial-image {
+    width: 15%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#portfolio {
+    padding: 5% 15%;
+}
+
+.portfolio-title {
+    text-align: center;
+}
+
+#pricing {
+    padding: 5% 15%;
+    text-align: center;
+    background-color: #9dab86;
+    color: #fff;
+}
+
+.pricing-plan {
+    padding-top: 5%;
+}
+
+.price-description {
+    color: #fff;
+}
+
+.pricing-button {
+    margin: 0 0 5% 0;
+}
+
+#cta {
+    padding: 5% 15%;
+    text-align: center;
+}
+
+.contact-button {
+    margin-top: 30px;
+}
+
+#footer {
+    text-align: center;
 }
 </style>
