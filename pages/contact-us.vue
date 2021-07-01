@@ -26,9 +26,11 @@
         <div class="row">
             <div class="feature-box col-lg-4 col-md-12 col-sm-12">
                 <!--<i class="fab fa-instagram fa-5x feature-icon"></i> -->
+                <img class="portrait" src="../static/Portrait Nadhifa.jpg">
                 <h3>Nadhifa Khalisha Anandra</h3>
                 <i class="text-threefourth">1806148800 / DPTK 1-01</i>
                 <p></p>
+                <a href="https://instagram.com/nadklisha"><img src="../static/Instagram icon.png" width="30" height="30"></a>
             </div>
             <div class="feature-box col-lg-4 col-md-12 col-sm-12">
                 <h3>Dimas Wira Nugraha</h3>
@@ -42,7 +44,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="feature-box col-lg-6 col-md-12 col-sm-12">
+            <div class="members-container col-lg-6 col-md-12 col-sm-12">
                 <img class="portrait" src="../static/Portrait Alvin.jpg">
                 <h3>Alvin Audinata</h3>
                 <i class="text-threefourth">1806200204 / DPTK 1-01</i>
@@ -51,25 +53,31 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-0 col-sm-0"></div>
                         <div class="col-lg-2 col-md-4 col-sm-4">
-                            <img src="../static/Instagram icon.png" width="30" height="30">
+                            <a href="https://instagram.com/alvinaudinata"><img src="../static/Instagram icon.png" width="30" height="30"></a>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-4">
-                            <img src="../static/Facebook icon.png" width="30" height="30">
+                            <a href="https://www.facebook.com/alvin.audinata/"><img src="../static/Facebook icon.png" width="30" height="30"></a>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-4">
-                            <img src="../static/Email icon.png" width="30" height="30">
+                            <a href="mailto:alvin_audinata@yahoo.com"><img src="../static/Email icon.png" width="30" height="30"></a>
                         </div>
                         <div class="col-lg-3 col-md-0 col-sm-0"></div>
                     </div>
                 </div>
             </div>
-            <div class="feature-box col-lg-6 col-md-12 col-sm-12">
+            <div class="members-container col-lg-6 col-md-12 col-sm-12">
                 <h3>Yusuf Abraham Bimo Kristanto</h3>
                 <i class="text-threefourth">1806200274 / DPTK 1-02</i>
                 <p></p>
             </div>
         </div>
     </section>
+    <section id="form">
+        <h2 class="text-center">Contact Form</h2>
+        <iframe class="block-center" src="https://docs.google.com/forms/d/e/1FAIpQLSdx0jojUFJsDKlWrkAvMHz64C_6lhIq6LTQm9FdIiH2Jg-pCw/viewform?embedded=true" width="900" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <Footer />
   </div>
 </template>
 
@@ -85,6 +93,16 @@
 #team {
     padding: 5% 15%;
     background-color: #FFF466;
+}
+
+.members-container {
+    text-align: center;
+    padding: 3%;
+}
+
+#form {
+    padding: 5% 15%;
+    background-color: #FCECDD;
 }
 
 .feature-box {
@@ -133,6 +151,11 @@ p {
 
 .portrait {
     max-height: 300px;
+}
+
+.block-center {
+    display: block !important;
+    margin: 0 auto;
 }
 
 .container-fluid {

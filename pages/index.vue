@@ -27,18 +27,22 @@
       <div class="row">
         <div class="feature-box col-lg-4 col-md-12 col-sm-12">
           <i class="fas fa-stopwatch fa-5x feature-icon"></i>
-          <h3>Flexible workflow</h3>
-          <p>Capture every special moment with the best clarity.</p>
+          <h3>Tepat Sasaran</h3>
+          <p>Memberikan rekomendasi tempat parkir berdasarkan tujuan kamu di UI,
+            sehingga mencari parkir akan menjadi mudah, bahkan saat jam sibuk sekalipun.
+          </p>
         </div>
         <div class="feature-box col-lg-4 col-md-12 col-sm-12">
           <i class="fas fa-camera-retro fa-5x feature-icon"></i>
-          <h3>Elite Photography Skills</h3>
-          <p>Creative perspective with award-winning photographers.</p>
+          <h3>Mutakhir</h3>
+          <p>Data ketersediaan tempat parkir selalu diperbarui secara berkala,
+            memastikan informasi yang aktual dan akurat.
+          </p>
         </div>
         <div class="feature-box col-lg-4 col-md-12 col-sm-12">
           <i class="far fa-check-circle fa-5x feature-icon"></i>
-          <h3>Guaranteed results</h3>
-          <p>Prints, edited and unedited files are all included in the bundle.</p>
+          <h3>User-friendly</h3>
+          <p>Antarmuka aplikasi yang intuitif, anti-ribet, dan bertema Universitas Indonesia.</p>
         </div>
       </div>
     </section>
@@ -73,7 +77,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../static/KetahUIparkir Location choose.png" class="d-block w-100 img-screenshot" alt="Dashboard">
+            <img src="../static/KetahUIparkir Dashboard.png" class="d-block w-100 img-screenshot" alt="Dashboard">
           </div>
           <div class="carousel-item">
             <img src="../static/KetahUIparkir Location choose.png" class="d-block w-100 img-screenshot" alt="Location choose">
@@ -134,9 +138,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-      <p>©Copyright {{new Date().getFullYear()}} KetahUIparkir</p>
-    </footer>
+    <Footer />
   </div>
 </template>
 
@@ -166,7 +168,7 @@ export default {
 
 #features {
     padding: 5% 15%;
-    background-color: #FFEE0A;
+    background-color: #FFC288;
     text-align: center;
 }
 
@@ -258,7 +260,7 @@ p {
 
 #video {
     padding: 5% 15%;
-    background-color: #C4C4C4;
+    background-color: #FCECDD;
     text-align: center;
 }
 
@@ -311,6 +313,7 @@ p {
 }
 
 #cta {
+    background-color: #FFEE0A;
     padding: 5% 15%;
     text-align: center;
 }
@@ -319,7 +322,4 @@ p {
     margin-top: 30px;
 }
 
-#footer {
-    text-align: center;
-}
 </style>
