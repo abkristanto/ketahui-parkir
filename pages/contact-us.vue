@@ -85,8 +85,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 .body {
   scroll-behavior: smooth;
 }
