@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["bootstrap", "virtual:afb0981747ec4e6dd2f6cb577f7de5799cd965bae524f4f19aaada8d43ef0d514021ec25d5fc1363600d1f2386ae8cffe72d9e999917d612ccf4810649c50f74#npm:5.0.2"],
             ["bootstrap-vue", "npm:2.21.2"],
             ["consola", "npm:2.15.3"],
             ["core-js", "npm:3.15.0"],
@@ -3845,6 +3846,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:5.0.2", {
+          "packageLocation": "./.yarn/cache/bootstrap-npm-5.0.2-6328a75b31-5074006f6b.zip/node_modules/bootstrap/",
+          "packageDependencies": [
+            ["bootstrap", "npm:5.0.2"]
+          ],
+          "linkType": "SOFT",
+        }],
         ["virtual:20d780c6de623c9401be17aaa53b4d6aa1bd8fb114b6a21b504b9685c419058a257acd0fc97410056bf8c84351083937aacb0c2cfd4b058d7c01d3f0836f716d#npm:4.6.0", {
           "packageLocation": "./.yarn/$$virtual/bootstrap-virtual-dd31a3f7cf/0/cache/bootstrap-npm-4.6.0-db76aee8bd-66019b6969.zip/node_modules/bootstrap/",
           "packageDependencies": [
@@ -3859,6 +3867,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/popper.js",
             "jquery",
             "popper.js"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:afb0981747ec4e6dd2f6cb577f7de5799cd965bae524f4f19aaada8d43ef0d514021ec25d5fc1363600d1f2386ae8cffe72d9e999917d612ccf4810649c50f74#npm:5.0.2", {
+          "packageLocation": "./.yarn/$$virtual/bootstrap-virtual-13fde70e55/0/cache/bootstrap-npm-5.0.2-6328a75b31-5074006f6b.zip/node_modules/bootstrap/",
+          "packageDependencies": [
+            ["bootstrap", "virtual:afb0981747ec4e6dd2f6cb577f7de5799cd965bae524f4f19aaada8d43ef0d514021ec25d5fc1363600d1f2386ae8cffe72d9e999917d612ccf4810649c50f74#npm:5.0.2"],
+            ["@popperjs/core", null],
+            ["@types/popperjs__core", null]
+          ],
+          "packagePeers": [
+            "@popperjs/core",
+            "@types/popperjs__core"
           ],
           "linkType": "HARD",
         }]
@@ -8745,6 +8766,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["nuxtjs", "workspace:."],
+            ["bootstrap", "virtual:afb0981747ec4e6dd2f6cb577f7de5799cd965bae524f4f19aaada8d43ef0d514021ec25d5fc1363600d1f2386ae8cffe72d9e999917d612ccf4810649c50f74#npm:5.0.2"],
             ["bootstrap-vue", "npm:2.21.2"],
             ["consola", "npm:2.15.3"],
             ["core-js", "npm:3.15.0"],

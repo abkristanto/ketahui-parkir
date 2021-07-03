@@ -6,7 +6,7 @@
             </div>
         </section>
         <section id="faq">
-            <h2 class="text-center">Frequently Asked Questions</h2>
+            <h1 class="text-center">Frequently Asked Questions</h1>
             <hr>
             <ol class="faq-counter">
                 <QuestionBox question="Apa yang dimaksud dengan KetahUIparkir?"
@@ -71,7 +71,18 @@
     </div>
 </template>
 
+<script>
+export default {
+    head: {
+        title: "FAQ - KetahUIparkir"
+    }
+}
+</script>
+
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
 .body {
   scroll-behavior: smooth;
 }
@@ -90,20 +101,21 @@
 }
 
 h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-weight: 900;
     font-size: 3.5rem;
+    font-style: italic;
     line-height: 1.5;
 }
 
 h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 3rem;
     line-height: 1.5;
 }
 
 h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
 }
 
@@ -122,7 +134,7 @@ p {
 }
 
 .navbar-brand {
-    font-family: "Ubuntu";
+    font-family: "Nunito";
     font-size: 2rem;
     color: #000 !important;
 }
