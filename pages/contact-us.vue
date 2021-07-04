@@ -61,7 +61,7 @@
             </div>
             <div class="feature-box col-lg-6 col-md-12 col-sm-12">
                 <img class="portrait mb-3" src="../static/abraham_round.png">
-                <h3>Yusuf Abraham Bimo Kristanto</h3>
+                <h3>Yusuf Abraham Bismo Kristanto</h3>
                 <i class="text-threefourth">1806200274 / DPTK 1-02</i>
                 <p></p>
             </div>
